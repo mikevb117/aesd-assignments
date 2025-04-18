@@ -18,7 +18,7 @@ void test_validate_my_username()
      * TODO: Replace the line below with your code here as described above to verify your /conf/username.txt 
      * config file and my_username() functions are setup properly
      */
-    T const char* expected_username = my_username();
+    const char* expected_username = my_username();
     char* actual_username = malloc_username_from_conf_file();
 
     TEST_ASSERT_NOT_NULL_MESSAGE(actual_username, "Failed to read username from config file.");
